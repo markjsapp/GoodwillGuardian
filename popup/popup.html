@@ -8,13 +8,16 @@
   <button id="addAuction">Add Auction</button>
   <div id="settings">
     <label for="alertTime">Alert Time:</label>
-    <input type="number" id="alertTime" min="1">
-    <select id="timeUnit">
+    <input type="number" id="alertTime" min="1" pattern="\d+" title="Please enter a number">    <select id="timeUnit">
       <option value="minutes">minutes</option>
       <option value="seconds">seconds</option>
     </select>
     <label for="alertSound">Alert Sound:</label>
-    <input type="file" id="alertSound" accept="audio/*">
+    <select id="alertSound">
+      <option value="sounds/alert1.mp3">Alert 1</option>
+      <option value="sounds/alert2.mp3">Alert 2</option>
+      <option value="sounds/alert3.mp3">Alert 3</option>
+    </select>
   </div>
   <script src="popup.js"></script>
 </body>
