@@ -1,0 +1,67 @@
+body {
+    background-color: #233245;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 15px;
+    width: 300px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
+  .auction {
+    background-color: white;
+    color: #233245;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #233245;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+  
+  button:hover {
+    background-color: #455267;
+  }
+  
+  #error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .settings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .settings label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .settings input, .settings select {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #233245;
+    font-size: 14px;
+    padding: 5px;
+    width: 100%;
+  }

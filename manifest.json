@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "GoodwillGuardian",
+    "version": "1.0",
+    "description": "Track and get alerts for expiring ShopGoodwill auctions",
+    "permissions": ["tabs", "storage", "alarms"],
+    "browser_action": {
+      "default_icon": "icons/icon128.png",
+      "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://www.shopgoodwill.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
